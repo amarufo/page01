@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Educativo</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <h1>Mi Dashboard Educativo</h1>
+  <div id="grafico" style="width:80%;height:500px;"></div>
+
+  <script>
+    var trace1 = {
+      x: ["Lima", "Arequipa", "Cusco"],
+      y: [120, 80, 45],
+      type: "bar"
+    };
+
+    var layout = { title: "Cantidad de instituciones por región" };
+
+    Plotly.newPlot("grafico", [trace1], layout);
+  </script>
+</body>
+</html>
